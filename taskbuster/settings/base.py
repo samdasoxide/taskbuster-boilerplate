@@ -15,6 +15,11 @@ from django.core.exceptions import ImproperlyConfigured
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print("The dir is Base_dir:", BASE_DIR)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,"static"),
+    )
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,6 +32,8 @@ def get_env_variable(var_name):
         raise ImproperlyConfigured(error_message)
 
 SECRET_KEY = get_env_variable("SECRET_KEY")
+
+
 
 
 
@@ -60,7 +67,7 @@ ROOT_URLCONF = 'taskbuster.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
