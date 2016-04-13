@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Samuel Ramdas -- Developer -- @samdasoxide
 
 # THANKS
 
-    <name>
+    Thanks to all the people around me who believe the greatness in me.
 
 # TECHNOLOGY COLOPHON
-
+	Django
     HTML5, CSS3
     jQuery, Modernizr
+    Twitter Bootstrap

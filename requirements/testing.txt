@@ -1,2 +1,5 @@
--r base.txt
+coverage==4.0.3
+Django==1.8
+EasyProcess==0.2.2
+PyVirtualDisplay==0.2
 selenium==2.53.1
